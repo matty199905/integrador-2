@@ -120,11 +120,11 @@ ul.header__sections li a:hover {transform: scale(1.1);}
 section.register-login {display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 40px;
+    gap: 60px;
     background-color: rgb(248, 238, 238);
 width: 100vw;
 height: 1030px;
-padding: 150px 50px;}
+padding: 150px 100px;}
 
 
 button {background-color: black;
@@ -141,10 +141,12 @@ margin-top: 10px;
 div.login {
 align-self: flex-start;
 width: 400px;
-
-
-
 }
+
+
+div.create-account {margin-top: 90px;}
+
+
 
 form {display: flex;
     flex-direction: column;

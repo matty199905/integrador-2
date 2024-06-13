@@ -1,10 +1,13 @@
+
+
+
 @media (max-width:650px){
 
     section.register-login{
         display: flex;
         flex-direction: column;
         text-align: center;
-        gap: 130px;
+        gap: 40px;
         height: 1550px;
         width: 100vw;
     }
