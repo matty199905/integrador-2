@@ -6,8 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Zapatillas Running, de todo tipo, al mejor precio">
+
     <title>Shop Page</title>
 
+    <link rel="stylesheet" href="../NAVBAR/styleNavbar.css">
+    <link rel="stylesheet" href="../NAVBAR/mediaNavbar.css">
     <link rel="stylesheet" href="styleShop.css">
     <link rel="stylesheet" href="../FOOTER/styleFooter.css">
     <link rel="stylesheet" href="../FOOTER/mediaFooter.css">
@@ -26,7 +29,28 @@
     <header>
 
         <section class="header">
+    
+  <!-- RESPONSIVE MENU -->
 
+
+  
+  <div class="menu-container show-menu">
+
+    <ul class="menu-container__items">
+        <li><a href="../PaginaShop/indexShop.html">Productos</a></li>
+        <div class="separator"></div>
+        <li><a href="../PaginaRegistro/indexRegistro.html">Ingresar / Registrarse</a></li>
+        <div class="separator"></div>
+        <li><a href="../PaginaHelp/indexHelp.html">Ayuda</a></li>
+        <div class="separator"></div>
+
+    </ul>
+                
+  </div>
+
+
+
+<!-- RESPONSIVE MENU -->
 
 
             <nav>
@@ -50,7 +74,7 @@
 
 
                 <ul class="header__nav">
-                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html" class="home">Home</a></li>
                     <li class="header__nav-icons"><a href="../PaginaRegistro/indexRegistro.html"><img class="profile"
                                 src="../img/profile.png" alt="User" /></a>
                     <li>
@@ -61,6 +85,7 @@
                         <li class="header__nav-icons"><img class="cart" src="../img/cart.png" alt="Cart">
                         </li>
                     </div>
+                    <li class="toggle-menu"><i class="fa-solid fa-bars"></i></li>
                 </ul>
 
             </nav>

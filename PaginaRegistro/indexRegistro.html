@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="styleRegistro.css">
     <link rel="stylesheet" href="mediaRegistro.css">
+    <link rel="stylesheet" href="../NAVBAR/styleNavbar.css">
+    <link rel="stylesheet" href="../NAVBAR/mediaNavbar.css">
     <link rel="stylesheet" href="../FOOTER/styleFooter.css">
     <link rel="stylesheet" href="../FOOTER/mediaFooter.css">
     <link rel="stylesheet" href="../CART/styleCart.css">
@@ -28,22 +30,45 @@
         <section class="header">
 
 
+            <!-- RESPONSIVE MENU -->
+
+
+
+            <div class="menu-container show-menu">
+
+                <ul class="menu-container__items">
+                    <li><a href="../index.html">Home</a></li>
+                    <div class="separator"></div>
+                    <li><a href="../PaginaShop/indexShop.html">Productos</a></li>
+                    <div class="separator"></div>
+                    <li><a href="../PaginaRegistro/indexRegistro.html">Ingresar / Registrarse</a></li>
+                    <div class="separator"></div>
+                    <li><a href="../PaginaHelp/indexHelp.html">Ayuda</a></li>
+                    <div class="separator"></div>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- RESPONSIVE MENU -->
 
             <nav>
 
 
                 <ul class="header__sections">
 
-                    <li><a href="../index.html"><img class="header__logo" src="../img/logo.png" alt="Logo"></a></li> 
- 
-                     <li class="products"><a href="../PaginaShop/indexShop.html">Productos</a>
-                     </li>
- 
-                 </ul>
- 
+                    <li><a href="../index.html"><img class="header__logo" src="../img/logo.png" alt="Logo"></a></li>
+
+                    <li class="products"><a href="../PaginaShop/indexShop.html">Productos</a>
+                    </li>
+
+                </ul>
+
 
                 <ul class="header__nav">
-                    <li><a href="../index.html">Home</a></li>
+                    <li class="home"><a href="../index.html">Home</a></li>
                     <li class="header__nav-icons"><a href="../PaginaRegistro/indexRegistro.html"><img class="profile"
                                 src="../img/profile.png" alt="User" /></a>
                     <li>
@@ -54,6 +79,7 @@
                         <li class="header__nav-icons"><img class="cart" src="../img/cart.png" alt="Cart">
                         </li>
                     </div>
+                    <li class="toggle-menu"><i class="fa-solid fa-bars"></i></li>
                 </ul>
 
             </nav>
@@ -71,14 +97,14 @@
     <section class="cart">
 
         <div class="cart">
-    
-    
+
+
             <div class="cart__overlay show-overlay"></div>
-    
-    
+
+
             <div class="cart__container show-cart">
-    
-    
+
+
                 <!-- <div class="cart__empty-msg"> 
                     <span class="cart__span">El carrito está vacío.</span> 
                     </div> 
@@ -87,16 +113,16 @@
                    <div class="separate__container">
                     <div class="cart__separate"></div> 
                 </div>   -->
-    
-    
-    
-    
-    
+
+
+
+
+
                 <div class="cart__products-container">
-    
-    
-    
-    
+
+
+
+
                     <!-- <div class="cart__product">
     
                             <div class="cart__product-info">
@@ -109,18 +135,18 @@
     
                         </div> 
                          -->
-    
-    
-    
-    
-    
+
+
+
+
+
                 </div>
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
                 <span class="cart__total"></span>
                 <div class="cart__btns">
                     <button class="btn__buy">Comprar</button>
@@ -128,10 +154,10 @@
                 </div>
             </div>
         </div>
-    
-    
+
+
     </section>
-    
+
 
 
 
@@ -199,14 +225,15 @@
                     <input type="password" id="password3" minlength="8" required="true">
 
                     <div class="checkbox">
-                        <input class="checkbox" type="checkbox"><span class="checkbox">Enviame un correo con noticias y ofertas</span>
+                        <input class="checkbox" type="checkbox"><span class="checkbox">Enviame un correo con noticias y
+                            ofertas</span>
                     </div>
 
                     <button>REGISTRO</button>
-                    
-                                    <span class="terms">Al crear una cuenta, usted acepta nuestros <a href="">Términos de uso y Política
-                                            de
-                                            privacidad.</a></span>
+
+                    <span class="terms">Al crear una cuenta, usted acepta nuestros <a href="">Términos de uso y Política
+                            de
+                            privacidad.</a></span>
                 </form>
 
                 <div class="register-msg"></div>
@@ -236,7 +263,7 @@
 
 
                     <ul class="footer__help">
-                        <h4 >Help</h4>
+                        <h4>Help</h4>
                         <li><a href="#footer">1-888-963-8795</a></li>
                         <li><a href="#footer">help@maxell.com</a></li>
                         <li><a href="#footer">Devoluciones/Cambios</a></li>

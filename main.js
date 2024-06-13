@@ -1,6 +1,8 @@
 import { cartInit } from "../CART/cart.js";
 import { addToCart } from "./CART/cart.js";
+import { menuInit } from "./NAVBAR/menu.js";
 import { productsData } from "./data.js";
+
 
 const carrouselContainer = document.querySelector(
   ".carrousel__products-container"
@@ -97,5 +99,6 @@ const init = () => {
   prev.addEventListener("click", moveLeft);
   form.addEventListener("submit", submitEmail);
   cartInit();
+  menuInit();
 };
 init();

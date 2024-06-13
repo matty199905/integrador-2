@@ -1,0 +1,10 @@
+@media (max-width: 720px) {
+
+    .products,.home{visibility: hidden;
+    }
+    .header__nav .contact, .header__nav__sobre-nosotros, 
+    .profile, .help {display: none;}
+    .toggle-menu{display: block;}
+    .header__logo {margin: 0px -400px 0px -50px;}
+    .cart-icon{margin-left: -100px;}
+}

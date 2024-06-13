@@ -1,5 +1,6 @@
 
 import { addToCart, cartInit } from "../CART/cart.js";
+import { menuInit } from "../NAVBAR/menu.js";
 import { productsData } from "../data.js";
 
 
@@ -136,11 +137,12 @@ export const shopInit = () => {
     renderProducts();
     productsContainer.addEventListener("click", addToCart);
     genderBtns.addEventListener("click", applyFilter);
-    cartInit();
     typeBtns.addEventListener("click", applyFilter);
     colorBtns.addEventListener("click", applyFilter);
     sizeBtns.addEventListener("click", applyFilter);
     all.addEventListener("click", showAll)
+    cartInit();
+    menuInit()
 }
 
 shopInit();

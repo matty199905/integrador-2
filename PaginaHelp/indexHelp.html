@@ -1,78 +1,96 @@
 <!DOCTYPE html>
 
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Zapatillas Running, de todo tipo, al mejor precio"
-    />
-    <title>Centro de ayuda</title>
 
-    <link rel="stylesheet" href="../FOOTER/styleFooter.css" />
-    <link rel="stylesheet" href="../FOOTER/mediaFooter.css" />
-    <link rel="stylesheet" href="../CART/styleCart.css" />
-    <link rel="stylesheet" href="styleHelp.css" />
-    <link rel="stylesheet" href="mediaHelp.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zapatillas Running, de todo tipo, al mejor precio" />
+  <title>Centro de ayuda</title>
+  
+  <link rel="stylesheet" href="../NAVBAR/styleNavbar.css">
+  <link rel="stylesheet" href="../NAVBAR/mediaNavbar.css">
+  <link rel="stylesheet" href="../FOOTER/styleFooter.css" />
+  <link rel="stylesheet" href="../FOOTER/mediaFooter.css" />
+  <link rel="stylesheet" href="../CART/styleCart.css" />
+  <link rel="stylesheet" href="styleHelp.css" />
+  <link rel="stylesheet" href="mediaHelp.css" />
+  
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
 
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
+<body>
+  <header>
+    <section class="header">
 
-  <body>
-    <header>
-      <section class="header">
-        <nav>
-          <ul class="header__sections">
-            <li>
-              <a href="../index.html"
-                ><img class="header__logo" src="../img/logo.png" alt="Logo"
-              /></a>
-            </li>
+      <!-- RESPONSIVE MENU -->
 
-            <li class="products">
-              <a href="../PaginaShop/indexShop.html">Productos</a>
-            </li>
-          </ul>
 
-          <ul class="header__nav">
-            <li><a href="../index.html">Home</a></li>
+
+      <div class="menu-container show-menu">
+
+        <ul class="menu-container__items">
+          <li><a href="../index.html">Home</a></li>
+          <div class="separator"></div>
+          <li><a href="../PaginaShop/indexShop.html">Productos</a></li>
+          <div class="separator"></div>
+          <li><a href="../PaginaRegistro/indexRegistro.html">Ingresar / Registrarse</a></li>
+          <div class="separator"></div>
+          <li><a href="../PaginaHelp/indexHelp.html">Ayuda</a></li>
+          <div class="separator"></div>
+
+        </ul>
+
+      </div>
+
+      <!-- RESPONSIVE MENU -->
+
+
+
+
+      <nav>
+        <ul class="header__sections">
+          <li>
+            <a href="../index.html"><img class="header__logo" src="../img/logo.png" alt="Logo" /></a>
+          </li>
+
+          <li class="products">
+            <a href="../PaginaShop/indexShop.html">Productos</a>
+          </li>
+        </ul>
+
+        <ul class="header__nav">
+          <li class="home"><a href="../index.html">Home</a></li>
+          <li class="header__nav-icons">
+            <a href="../PaginaRegistro/indexRegistro.html"><img class="profile" src="../img/profile.png"
+                alt="User" /></a>
+          </li>
+          <li></li>
+          <li class="header__nav-icons">
+            <a href="../PaginaHelp/indexHelp.html"><img class="help" src="../img/help.png" alt="Help" /></a>
+          </li>
+          <div class="cart-icon">
+            <div class="cart__bubble"><span class="bubble">0</span></div>
             <li class="header__nav-icons">
-              <a href="../PaginaRegistro/indexRegistro.html"
-                ><img class="profile" src="../img/profile.png" alt="User"
-              /></a>
+              <img class="cart" src="../img/cart.png" alt="Cart" />
             </li>
-            <li></li>
-            <li class="header__nav-icons">
-              <a href="../PaginaHelp/indexHelp.html"
-                ><img class="help" src="../img/help.png" alt="Help"
-              /></a>
-            </li>
-            <div class="cart-icon">
-              <div class="cart__bubble"><span class="bubble">0</span></div>
-              <li class="header__nav-icons">
-                <img class="cart" src="../img/cart.png" alt="Cart" />
-              </li>
-            </div>
-          </ul>
-        </nav>
-      </section>
-    </header>
+          </div>
+          <li class="toggle-menu"><i class="fa-solid fa-bars"></i></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
 
-    <section class="cart">
-      <div class="cart">
-        <div class="cart__overlay show-overlay"></div>
+  <section class="cart">
+    <div class="cart">
+      <div class="cart__overlay show-overlay"></div>
 
-        <div class="cart__container show-cart">
-          <!-- <div class="cart__empty-msg"> 
+      <div class="cart__container show-cart">
+        <!-- <div class="cart__empty-msg"> 
                         <span class="cart__span">El carrito está vacío.</span> 
                         </div> 
         
@@ -81,8 +99,8 @@
                         <div class="cart__separate"></div> 
                     </div>   -->
 
-          <div class="cart__products-container">
-            <!-- <div class="cart__product">
+        <div class="cart__products-container">
+          <!-- <div class="cart__product">
         
                                 <div class="cart__product-info">
                                     <h3 class="cart__product-title">Name</h3>
@@ -94,105 +112,92 @@
         
                             </div> 
                              -->
-          </div>
+        </div>
 
-          <span class="cart__total"></span>
-          <div class="cart__btns">
-            <button class="btn__buy">Comprar</button>
-            <button class="btn__delete-all">Vaciar Carrito</button>
-          </div>
+        <span class="cart__total"></span>
+        <div class="cart__btns">
+          <button class="btn__buy">Comprar</button>
+          <button class="btn__delete-all">Vaciar Carrito</button>
         </div>
       </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="help">
+      <div class="help__container">
+        <h1>¿Cómo podemos ayudarte?</h1>
+
+        <span>Envienos un mensaje de texto: 0800-123-45678</span>
+        <span>Llámenos: 1-888-963-8944</span>
+        <span>Horario de atencion: Lunes - Domingos: 10hs - 18hs </span>
+      </div>
     </section>
+  </main>
 
-    <main>
-      <section class="help">
-        <div class="help__container">
-          <h1>¿Cómo podemos ayudarte?</h1>
+  <footer>
+    <section id="footer">
+      <div class="footer__container">
+        <div class="footer__container__ul">
+          <ul class="footer__help">
+            <h4>Help</h4>
+            <li><a href="#footer">1-888-963-8795</a></li>
+            <li><a href="#footer">help@maxell.com</a></li>
+            <li><a href="#footer">Devoluciones/Cambios</a></li>
+            <li><a href="#footer">Preguntas frecuentes/Contáctenos</a></li>
+            <li><a href="#footer">Afterpay</a></li>
+          </ul>
 
-          <span>Envienos un mensaje de texto: 0800-123-45678</span>
-          <span>Llámenos: 1-888-963-8944</span>
-          <span>Horario de atencion: Lunes - Domingos: 10hs - 18hs </span>
+          <ul class="footer__company">
+            <h4>Company</h4>
+            <li><a href="#footer">Nuestras Tiendas</a></li>
+            <li><a href="#footer">Nuestra historia</a></li>
+            <li><a href="#footer">Nuestros Materiales</a></li>
+            <li><a href="#footer">Sostenibilidad</a></li>
+            <li><a href="#footer">Inversores</a></li>
+            <li><a href="#footer">Cuidado del calzado</a></li>
+            <li><a href="#footer">Asociaciones</a></li>
+            <li><a href="#footer">Afiliados</a></li>
+            <li><a href="#footer">Pedidos al por mayor</a></li>
+          </ul>
+
+          <ul>
+            <h4>Follow Us</h4>
+            <p class="follow__description">
+              Ofertas exclusivas, avisos de cosas nuevas y avistamientos de
+              Maxell
+            </p>
+
+            <ul class="footer__icons-list">
+              <li>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://www.x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+              </li>
+            </ul>
+          </ul>
         </div>
-      </section>
-    </main>
 
-    <footer>
-      <section id="footer">
-        <div class="footer__container">
-          <div class="footer__container__ul">
-            <ul class="footer__help">
-              <h4>Help</h4>
-              <li><a href="#footer">1-888-963-8795</a></li>
-              <li><a href="#footer">help@maxell.com</a></li>
-              <li><a href="#footer">Devoluciones/Cambios</a></li>
-              <li><a href="#footer">Preguntas frecuentes/Contáctenos</a></li>
-              <li><a href="#footer">Afterpay</a></li>
-            </ul>
+        <span class="footer">© 2024 Allbirds, Inc. Todos los derechos reservados.
+          <a href="#footer">Términos, Privacidad y Accesibilidad</a></span>
+      </div>
+    </section>
+  </footer>
 
-            <ul class="footer__company">
-              <h4>Company</h4>
-              <li><a href="#footer">Nuestras Tiendas</a></li>
-              <li><a href="#footer">Nuestra historia</a></li>
-              <li><a href="#footer">Nuestros Materiales</a></li>
-              <li><a href="#footer">Sostenibilidad</a></li>
-              <li><a href="#footer">Inversores</a></li>
-              <li><a href="#footer">Cuidado del calzado</a></li>
-              <li><a href="#footer">Asociaciones</a></li>
-              <li><a href="#footer">Afiliados</a></li>
-              <li><a href="#footer">Pedidos al por mayor</a></li>
-            </ul>
+  <script src="./mainHelp.js" type="module"></script>
+</body>
 
-            <ul>
-              <h4>Follow Us</h4>
-              <p class="follow__description">
-                Ofertas exclusivas, avisos de cosas nuevas y avistamientos de
-                Maxell
-              </p>
-
-              <ul class="footer__icons-list">
-                <li>
-                  <a href="https://www.instagram.com/" target="_blank"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://www.x.com/" target="_blank"
-                    ><i class="fa-brands fa-x-twitter"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/" target="_blank"
-                    ><i class="fa-brands fa-square-facebook"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://www.tiktok.com/" target="_blank"
-                    ><i class="fa-brands fa-tiktok"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/" target="_blank"
-                    ><i class="fa-brands fa-youtube"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://www.pinterest.com/" target="_blank"
-                    ><i class="fa-brands fa-pinterest"></i
-                  ></a>
-                </li>
-              </ul>
-            </ul>
-          </div>
-
-          <span class="footer"
-            >© 2024 Allbirds, Inc. Todos los derechos reservados.
-            <a href="#footer">Términos, Privacidad y Accesibilidad</a></span
-          >
-        </div>
-      </section>
-    </footer>
-
-    <script src="./mainHelp.js" type="module"></script>
-  </body>
 </html>

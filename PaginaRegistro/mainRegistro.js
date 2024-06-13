@@ -1,5 +1,6 @@
 
 import { cartInit } from "../CART/cart.js";
+import { menuInit } from "../NAVBAR/menu.js";
 
 const signInForm = document.querySelector(".sign-in");
 const inputEmailSignIn = document.getElementById("email")
@@ -77,8 +78,9 @@ function register(e) {
 
 
 const init = () => {
-    cartInit();
     signInForm.addEventListener("submit", signIn);
     registerForm.addEventListener("submit", register);
+    cartInit();
+    menuInit();
 }
 init();
