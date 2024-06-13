@@ -1,0 +1,291 @@
+
+
+@media (max-width: 1070px) {
+  /* HERO */
+  .hero__image {
+    background-size: cover;
+    background-position: right;
+  }
+
+  .hero__aside {
+    transform: scale(0.9);
+    margin: 200px -20px;
+  }
+}
+
+@media (max-width: 920px) {
+  /* HERO */
+  .hero__aside {
+    transform: scale(0.8);
+    margin: 210px -20px;
+  }
+
+  /* CONTACT */
+  .contact__container {
+    height: 580px;
+  }
+
+  .contact__title-description-container {
+    flex-direction: row;
+  }
+
+  h3.contact__title {
+    font-size: 34px;
+    width: 340px;
+    text-align: left;
+  }
+
+  .contact__description {
+    padding: 10px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 920px) {
+  /* HERO */
+  .hero__image {
+    background-image: none;
+    background-color: red;
+    width: 0px;
+  }
+}
+
+
+
+@media (max-width: 670px) {
+  /* HERO */
+  .hero__title {
+    font-size: 50px;
+  }
+
+  .hero__title {
+    font-size: 50px;
+  }
+
+  .hero__shop {
+    margin: 200px 0px 0px 0px;
+  }
+
+  /* CONTACT */
+  .contact__input {
+    width: 400px;
+  }
+}
+
+@media (max-width: 560px) {
+  /* HERO */
+  .hero__aside {
+    transform: scale(0.8);
+    margin: 220px -20px;
+  }
+
+  /* ABOUT US */
+  .aboutus__container {
+    height: 500px;
+  }
+
+  .aboutus__glassmorphism__container {
+    gap: 20px;
+  }
+
+  h2.about-us__title {
+    font-size: 24px;
+  }
+
+  .aboutus__description {
+    font-size: 15px;
+  }
+
+  /* CONTACT */
+  h3.contact__title {
+    font-size: 30px;
+    padding-left: 20px;
+  }
+
+  .contact__description {
+    font-size: 15px;
+  }
+
+  .contact__input {
+    width: 300px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  /* HERO */
+
+  .hero__winter {
+    max-width: 95%;
+    margin-top: -20px;
+  }
+
+  .hero__title-button-container {
+    max-width: 80%;
+  }
+
+  .hero__title {
+    font-size: 50px;
+    margin-right: 70px;
+  }
+
+  .hero__shop {
+    margin: 200px 70px 0px 0px;
+  }
+
+  /* ABOUT US */
+  .aboutus__description {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .aboutus__glassmorphism__container {
+    gap: 20px;
+    padding: 30px 20px;
+    margin-top: -1px;
+  }
+
+  /* CONTACT */
+
+  .contact__container {
+    height: 500px;
+  }
+  .contact__title-description-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  h3.contact__title {
+    font-size: 25px;
+    width: 100px;
+  }
+  .contact__description {
+    font-size: 15px;
+    width: 200px;
+    text-align: left;
+  }
+
+  form {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__button {
+    height: 45px;
+  }
+
+  .contact__input {
+    width: 350px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 440px) {
+  /* HERO */
+
+  .hero__title-button-container {
+    max-width: 70%;
+  }
+  .hero__title {
+    font-size: 45px;
+    width: 100px;
+    position: absolute;
+    left: 40px;
+    top: 0px;
+  }
+  .hero__aside {
+    transform: scale(0.7);
+    margin: 230px -27px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .hero__shop {
+    margin: 420px 0 0 0;
+    width: 150px;
+    border-radius: 5px;
+  }
+
+  /* CONTACT */
+  .contact__container {
+    height: 500px;
+    width: 90vw;
+    margin-top: 200px;
+  }
+  .contact__description {
+    line-height: 25px;
+  }
+  h3.contact__title {
+    font-size: 23px;
+    margin-left: -30px;
+    width: 180px;
+    text-align: center;
+  }
+  .contact__title-description-container {
+    flex-direction: column;
+    gap: 0px;
+  }
+  
+}
+
+@media (max-width: 400px) {
+  /* ABOUT US */
+  h2.about-us__title {
+    font-size: 20px;
+  }
+
+  .aboutus__description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .aboutus__glassmorphism__container {
+    margin-right: -10px;
+  }
+
+  /* CONTACT */
+  .contact__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 60vw;
+    margin: 100px auto;
+    padding: 0px 160px;
+  }
+  .contact__description {
+    line-height: 22px;
+    font-size: 14px;
+  }
+  h3.contact__title {
+    font-size: 22px;
+  }
+  .contact__button {
+    transform: scale(0.8);
+    align-self: flex-start;
+    margin-left: -10px;
+  }
+
+  .contact__input {
+    width: 290px;
+    height: 40px;
+  }
+
+}
+
+@media (max-width: 350px) {
+  /* ABOUT US */
+
+  .aboutus__description {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
+
+
+
+
+
+
+

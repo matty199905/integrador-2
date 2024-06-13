@@ -1,0 +1,17 @@
+@media (max-width: 770px) {
+
+    .help__container{width: 80vw;
+    text-align: center;
+font-size: 15px;}
+
+h1{font-size: 40px;}
+
+}
+
+@media (max-width: 470px) {
+
+    .help__container{
+    font-size: 14px;}
+    h1{font-size: 35px;}
+}
+

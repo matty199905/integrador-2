@@ -1,0 +1,20 @@
+@media (max-width:650px){
+
+    section.register-login{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 130px;
+        height: 1550px;
+        width: 100vw;
+    }
+    div.login{align-self: center;
+        width: 80vw}}
+
+    div.create-account{width: 80vw;}
+
+
+@media (max-width:400px) {
+
+    span.checkbox{font-size: 14px;}
+}
