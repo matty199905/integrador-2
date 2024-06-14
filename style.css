@@ -208,8 +208,7 @@ span.sale {
     border-radius: 10px;
     overflow: hidden;
     padding: 10px;
-
-
+    overflow-x: scroll;
 
 
 }
