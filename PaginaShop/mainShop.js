@@ -22,7 +22,7 @@ const appState = {
 
 
 function showfilters () {
-aside.classList.toggle("show-aside")
+aside.classList.toggle("show-aside");
 }
 
 
