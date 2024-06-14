@@ -1,9 +1,12 @@
-import { productsData } from "../data.js";
 
 
-const cartToggle = document.querySelector(".cart-icon");
-const cartContainer = document.querySelector(".cart__container");
-const overlay = document.querySelector(".cart__overlay");
+
+
+
+
+export const cartToggle = document.querySelector(".cart-icon");
+export const cartContainer = document.querySelector(".cart__container");
+export const overlay = document.querySelector(".cart__overlay");
 
 
 
@@ -28,8 +31,11 @@ function openCart(e) {
 }
 
 function closeAll() {
-    cartContainer.classList.toggle("show-cart");
-    overlay.classList.toggle("show-overlay")
+    cartContainer.classList.add("show-cart");
+    overlay.classList.add("show-overlay");
+   
+
+    
 }
 
 

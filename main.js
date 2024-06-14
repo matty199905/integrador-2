@@ -1,6 +1,6 @@
 import { cartInit } from "../CART/cart.js";
 import { addToCart } from "./CART/cart.js";
-import { menuInit } from "./NAVBAR/menu.js";
+import { menuContainer, menuInit } from "./NAVBAR/menu.js";
 import { productsData } from "./data.js";
 
 
@@ -92,6 +92,12 @@ function submitEmail(e) {
   form.reset();
 }
 
+
+function closeMenuRedirect () {
+  
+menuContainer.classList.add("show-menu")
+}
+
 const init = () => {
   carrouselContainer.addEventListener("DOMContentLoaded", carrouselRender());
   carrouselContainer.addEventListener("click", addToCart);
@@ -100,5 +106,6 @@ const init = () => {
   form.addEventListener("submit", submitEmail);
   cartInit();
   menuInit();
+  menuContainer.addEventListener("click", closeMenuRedirect)
 };
 init();

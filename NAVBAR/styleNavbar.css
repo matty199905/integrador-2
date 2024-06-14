@@ -2,7 +2,7 @@
 section.header {
     position: fixed;
     top: 0;
-    z-index: 100;
+    z-index: 400;
 }
 
 
@@ -109,10 +109,11 @@ font-size: 16px;}
 height: 450px;
 background:linear-gradient(white,white,white,white, white, white,rgb(230, 230, 230));
 transition: all 0.5s ease;
+z-index: 350;
 
 }
 
-.show-menu {transform: translateY(-500px);
+.show-menu {transform: translateY(-600px);
     transition: all 0.5s ease;}
 
 
