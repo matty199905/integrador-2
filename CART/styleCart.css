@@ -79,7 +79,8 @@ flex-direction: column;
 justify-content: flex-start;
 align-items: center;
 width: 85%;
-height: 380px;
+height: 430px;
+margin-bottom: 20px;
 padding-top: 20px;
 overflow-y:scroll;}
 

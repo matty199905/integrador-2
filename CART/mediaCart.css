@@ -9,6 +9,7 @@
 .cart__products-container{padding: 0px;
 margin: 0px;
 width: 100%;
+
 }
     .cart__product {
         width: 110%;
@@ -23,6 +24,7 @@ width: 100%;
 
     .cart__total {
         font-size: 15px;
+
     }
 
     .cart__empty-msg {
