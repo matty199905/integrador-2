@@ -6,11 +6,13 @@ import { productsData } from "../data.js";
 
 
 const productsContainer = document.querySelector(".products-container");
-const genderBtns = document.querySelector(".header__sections");
+const genderBtns = document.querySelector(".gender-categories");
 const typeBtns = document.querySelector(".container__filter-type");
 const colorBtns = document.querySelector(".container__filter-color");
-const sizeBtns = document.querySelector(".container__filter-size")
-const all = document.querySelector(".todos")
+const sizeBtns = document.querySelector(".container__filter-size");
+const all = document.querySelector(".todos");
+const filtersBtn = document.querySelector(".filters");
+const aside = document.getElementById("aside")
 
 
 const appState = {
@@ -19,7 +21,9 @@ const appState = {
 
 
 
-
+function showfilters () {
+aside.classList.toggle("show-aside")
+}
 
 
 
@@ -140,7 +144,8 @@ export const shopInit = () => {
     typeBtns.addEventListener("click", applyFilter);
     colorBtns.addEventListener("click", applyFilter);
     sizeBtns.addEventListener("click", applyFilter);
-    all.addEventListener("click", showAll)
+    all.addEventListener("click", showAll);
+    filtersBtn.addEventListener("click", showfilters)
     cartInit();
     menuInit()
 }

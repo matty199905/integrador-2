@@ -1,0 +1,19 @@
+@media (max-width:380px) {
+
+    div.cart__container{
+        align-items: flex-start;
+        
+ padding-left: 20px;
+ width: 90vw;
+    }
+ 
+
+.btn__buy, .btn__delete-all{
+    
+    width: 250px;
+    }
+
+    .cart__total {font-size: 15px;}
+
+    .cart__empty-msg {font-size: 18px;}
+}

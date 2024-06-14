@@ -32,6 +32,12 @@ nav {
     margin-left: -30px;
 }
 
+
+div.logo-filter {display: flex;}
+
+.filters{align-self: center;
+visibility: hidden;}
+
 ul.header__nav {
     display: flex;
     align-items: center;

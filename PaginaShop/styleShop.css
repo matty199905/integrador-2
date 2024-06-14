@@ -22,101 +22,24 @@ background-color: transparent;}
 /* NAV */
 
 
-
-section.header {
-    position: fixed;
-    top: 0;
-    z-index: 100;
-}
-
-
-nav {
-    display: flex;
-    flex-direction: row;
-    position: sticky;
-    justify-content: space-between;
-    top: 0;
-    right: 0;
-    left: 0;
-    background-color: white;
-    width: 100vw;
-    height: 65px;
-    padding: 30px;
-    box-shadow: 0px 0px 70px 0px rgb(207, 207, 207);
-
-}
-
 .header__logo {
 
     margin-top: -60px;
-    margin-right: 162px;
-    height: 130px;
-    min-width: 160px;
+
 }
  
 
 
-ul.header__nav {
-    display: flex;
-    align-items: center;
-    gap: 30px;
 
 
-}
-
-.header__nav__sobre-nosotros {
-    width: 100px;
-    text-align: center;
-}
-
-
-
-
-
-img.profile {
-    width: 33px;
-    margin-right: -30px;
-}
-
-img.help {
-    width: 36px;
-}
-img.cart{width: 36px;}
-
-div.cart-icon{position: relative;}
-div.cart__bubble{
-    position: absolute;
-    top: -8px;
-    right: -10px;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    font-size: 14px;
-    font-weight: 800;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-ul.header__sections {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-right: 50px;
-    font-weight: 400;
-    letter-spacing: 1px;
-
-}
-ul.header__sections li button{border: none;
-background-color: transparent;
-font-size: 18px;}
-
-.todos{font-weight: 600;}
 
 
 
 
 /* ASIDE */
+
+aside {  transition: all 0.5s ease;
+z-index: 1;}
 
 .shop__aside {
     display: flex;
@@ -124,12 +47,23 @@ font-size: 18px;}
     justify-content: flex-start;
     align-items: flex-start;
     padding: 110px 40px 40px 40px;
-  
     width: 300px;
-    height: 1050px;
+    height: 1300px;
     gap: 70px;
+    margin-bottom: -0px;
     background-color: rgb(247, 247, 247);
+  
 }
+
+
+.gender-categories {display: flex;
+flex-direction: column;}
+
+.gender-categories li button {font-size: 15px;
+font-weight: 400;}
+
+
+ 
 
 h3.aside {
     margin-bottom: 16px;
@@ -146,7 +80,8 @@ h3.aside {
 .type-btn {font-size: 15px;
 letter-spacing: 0.6px;
 padding-bottom: 5px;}
-.type-btn:hover{text-decoration: underline;
+
+.type-btn:hover {text-decoration: underline;
 transform: scale(1.1);
 transition: all 0.2S ease}
 

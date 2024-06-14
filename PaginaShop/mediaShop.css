@@ -1,0 +1,48 @@
+@media (max-width:999px) {
+
+    aside {
+        transform: scale(0.9);
+        margin-left: -20px;
+        margin-top: -150px;
+    }
+
+    div.products-container {
+        padding-left: 0px;
+    }
+
+    .card {
+        width: 200px;
+        height: 350px;
+    }
+}
+
+@media (max-width:929px) {
+    aside {
+        margin-top: -220px;
+    }
+
+}
+
+
+@media (max-width:690px) {
+
+    aside {
+        margin-top: -150px;
+    }
+
+    .show-aside {
+        transform: translateX(-400px);
+        transition: all 0.5s ease;
+    }
+
+    main {
+        transform: translateX(-280px);
+        padding-bottom: 20px;
+    }
+
+    div.products-container {
+        width: 100vw;
+        padding: 10px;
+        margin-top: 80px;
+    }
+}

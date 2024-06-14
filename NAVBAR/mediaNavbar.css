@@ -8,3 +8,9 @@
     .header__logo {margin: 0px -400px 0px -50px;}
     .cart-icon{margin-left: -100px;}
 }
+
+@media (max-width: 690px) { 
+
+.filters{visibility: visible;
+margin-left: 80px;}
+}

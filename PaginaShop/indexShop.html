@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="../NAVBAR/styleNavbar.css">
     <link rel="stylesheet" href="../NAVBAR/mediaNavbar.css">
     <link rel="stylesheet" href="styleShop.css">
+    <link rel="stylesheet" href="mediaShop.css">
     <link rel="stylesheet" href="../FOOTER/styleFooter.css">
     <link rel="stylesheet" href="../FOOTER/mediaFooter.css">
     <link rel="stylesheet" href="../CART/styleCart.css">
+    <link rel="stylesheet" href="../CART/mediaCart.css">
 
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
 
@@ -29,50 +31,38 @@
     <header>
 
         <section class="header">
-    
-  <!-- RESPONSIVE MENU -->
 
-
-  
-  <div class="menu-container show-menu">
-
-    <ul class="menu-container__items">
-        <li><a href="../PaginaShop/indexShop.html">Productos</a></li>
-        <div class="separator"></div>
-        <li><a href="../PaginaRegistro/indexRegistro.html">Ingresar / Registrarse</a></li>
-        <div class="separator"></div>
-        <li><a href="../PaginaHelp/indexHelp.html">Ayuda</a></li>
-        <div class="separator"></div>
-
-    </ul>
-                
-  </div>
+            <!-- RESPONSIVE MENU -->
 
 
 
-<!-- RESPONSIVE MENU -->
+            <div class="menu-container show-menu">
+
+                <ul class="menu-container__items">
+                    <li><a href="../index.html">Home</a></li>
+                    <div class="separator"></div>
+                    <li><a href="../PaginaRegistro/indexRegistro.html">Ingresar / Registrarse</a></li>
+                    <div class="separator"></div>
+                    <li><a href="../PaginaHelp/indexHelp.html">Ayuda</a></li>
+                    <div class="separator"></div>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- RESPONSIVE MENU -->
 
 
             <nav>
 
 
-                <ul class="header__sections">
-                    <li><button class="category" data-category="male">Hombres</button>
-                    </li>
-                    <li><button class="category" data-category="female">Mujeres</button>
-                    </li>
-                    <li><button class="category" data-category="kids">Niños</button>
-                    </li>
-                    <li> <button class="todos">Todos</button></li>
-                </ul>
 
-
-
-
+<div class="logo-filter">
                 <a href="../index.html"><img class="header__logo" src="../img/logo.png" alt="Logo"></a>
-
-
-
+                <span class="filters">Filtros</span>
+            </div>
                 <ul class="header__nav">
                     <li><a href="../index.html" class="home">Home</a></li>
                     <li class="header__nav-icons"><a href="../PaginaRegistro/indexRegistro.html"><img class="profile"
@@ -104,14 +94,14 @@
     <section class="cart">
 
         <div class="cart">
-    
-    
+
+
             <div class="cart__overlay show-overlay"></div>
-    
-    
+
+
             <div class="cart__container show-cart">
-    
-    
+
+
                 <!-- <div class="cart__empty-msg"> 
                     <span class="cart__span">El carrito está vacío.</span> 
                     </div> 
@@ -120,16 +110,16 @@
                    <div class="separate__container">
                     <div class="cart__separate"></div> 
                 </div>   -->
-    
-    
-    
-    
-    
+
+
+
+
+
                 <div class="cart__products-container">
-    
-    
-    
-    
+
+
+
+
                     <!-- <div class="cart__product">
     
                             <div class="cart__product-info">
@@ -142,18 +132,18 @@
     
                         </div> 
                          -->
-    
-    
-    
-    
-    
+
+
+
+
+
                 </div>
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
                 <span class="cart__total"></span>
                 <div class="cart__btns">
                     <button class="btn__buy">Comprar</button>
@@ -161,22 +151,22 @@
                 </div>
             </div>
         </div>
-    
-    
+
+
     </section>
-    
 
 
 
 
 
-    
+
+
     <section class="shop-container">
 
 
 
 
-        <aside>
+        <aside id="aside" class="show-aside">
 
             <section id="shop-aside">
 
@@ -184,6 +174,16 @@
                 <div class="shop__aside">
 
 
+                    <ul class="gender-categories">
+                        <h3 class="aside">Filtro por Género</h3>
+                        <li><button class="category type-btn" data-category="male">Hombres</button>
+                        </li>
+                        <li><button class="category type-btn" data-category="female">Mujeres</button>
+                        </li>
+                        <li><button class="category type-btn" data-category="kids">Niños</button>
+                        </li>
+                        <li> <button class="todos type-btn">Todos</button></li>
+                    </ul>
 
 
                     <div class="aside__type-container">
@@ -238,16 +238,26 @@
 
                             <h3 class="aside">Filtro por Color</h3>
 
-                            <li class="color negro"><button class="btn-color category" data-category="negro">Negro</button></li>
-                            <li class="color azul"> <button class="btn-color category" data-category="azul">Azul</button></li>
-                            <li class="color gris"> <button class="btn-color category" data-category="gris">Gris</button></li>
-                            <li class="color morado"> <button class="btn-color category" data-category="morado">Morado</button></li>
-                            <li class="color blanco"> <button class="btn-color category" data-category="blanco">Blanco</button></li>
-                            <li class="color beige"> <button class="btn-color category" data-category="beige">Beige</button></li>
-                            <li class="color verde"> <button class="btn-color category" data-category="verde">Verde</button></li>
-                            <li class="color marron"> <button class="btn-color category" data-category="marron">Marron</button></li>
-                            <li class="color rosado"> <button class="btn-color category" data-category="rosa">Rosado</button></li>
-                            <li class="color rojo"> <button class="btn-color category" data-category="rojo"> Rojo</button></li>
+                            <li class="color negro"><button class="btn-color category"
+                                    data-category="negro">Negro</button></li>
+                            <li class="color azul"> <button class="btn-color category"
+                                    data-category="azul">Azul</button></li>
+                            <li class="color gris"> <button class="btn-color category"
+                                    data-category="gris">Gris</button></li>
+                            <li class="color morado"> <button class="btn-color category"
+                                    data-category="morado">Morado</button></li>
+                            <li class="color blanco"> <button class="btn-color category"
+                                    data-category="blanco">Blanco</button></li>
+                            <li class="color beige"> <button class="btn-color category"
+                                    data-category="beige">Beige</button></li>
+                            <li class="color verde"> <button class="btn-color category"
+                                    data-category="verde">Verde</button></li>
+                            <li class="color marron"> <button class="btn-color category"
+                                    data-category="marron">Marron</button></li>
+                            <li class="color rosado"> <button class="btn-color category"
+                                    data-category="rosa">Rosado</button></li>
+                            <li class="color rojo"> <button class="btn-color category" data-category="rojo">
+                                    Rojo</button></li>
 
 
 
@@ -285,7 +295,7 @@
                     </div>  -->
 
 
-
+                </div>
 
             </section>
 
