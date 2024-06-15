@@ -47,6 +47,10 @@ function closeAside ({target}) {
 }
 
 
+function closeAside2 (){
+    return aside.classList.toggle("show-aside");
+}
+
 
 
 
@@ -167,7 +171,8 @@ export const shopInit = () => {
     sizeBtns.addEventListener("click", applyFilter);
     all.addEventListener("click", showAll);
     filtersBtn.addEventListener("click", showfilters);
-    asideContainer.addEventListener("click", closeAside)
+    asideContainer.addEventListener("click", closeAside);
+    productsContainer.addEventListener("click", closeAside2)
     cartInit();
     menuInit();
 }

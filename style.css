@@ -455,3 +455,7 @@ form {
     font-size: 22px;
     font-weight: 600;
 }
+
+.info-msg{width: 90vw;
+text-align: center;
+margin-bottom: 40px;}

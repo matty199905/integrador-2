@@ -87,7 +87,7 @@ function submitEmail(e) {
     "Enviando info al Email. Recuerde revisar su bandeja de SPAM";
   setTimeout(() => {
     infoMsg.innerHTML = "";
-  }, 2000);
+  }, 3000);
 
   form.reset();
 }

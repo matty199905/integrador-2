@@ -20,14 +20,16 @@
     aside {
        
         transform: translateX(-400px);
-    
-    }
+       
+        position: fixed;
+        height: 100vh;
+        overflow-y: scroll;
+}
 
-   
-    
+
 
     main {
-        transform: translateX(-300px);
+       
         padding-bottom: 20px;
     }
 
