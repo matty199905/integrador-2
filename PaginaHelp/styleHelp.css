@@ -12,7 +12,8 @@
     color: white;
 }
 
-a:visited {color: black;}
+a:visited, a {color: black;}
+
  i,.header__nav-icons, button:hover {cursor: pointer;transition: all 0.1s ease}
 
 .fa-solid{color: black;}
