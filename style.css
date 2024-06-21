@@ -8,8 +8,13 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
-    font-family: Nunito
+    font-family: 'Nunito';
+    
+
 }
+
+body{
+overflow-x: hidden;}
 
 a:visited {
     color: black;
