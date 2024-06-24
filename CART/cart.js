@@ -1,9 +1,6 @@
 
 
 
-
-
-
 export const cartToggle = document.querySelector(".cart-icon");
 export const cartContainer = document.querySelector(".cart__container");
 export const overlay = document.querySelector(".cart__overlay");
@@ -98,6 +95,7 @@ const createCartProduct = (product) => {
     
 
 
+
     return `<div class="cart__product">
 
      <div class="cart__product-info">
@@ -105,8 +103,23 @@ const createCartProduct = (product) => {
          <span class="cart__product-price">$${price}</span>
      </div>
 
+     <div class="quantity-container">
+
      <span class="cart__product-quantity">
      Cantidad:${quantity} </span>
+
+     <div class="btns-quantity"> 
+     <button class="btn-quantity add"
+      data-name="${name}"
+        data-price="${price}"
+        data-image="${image}">+</button> 
+     <button class="btn-quantity remove"
+      data-name="${name}"
+        data-price="${price}"
+        data-image="${image}">-</button>
+     </div>
+
+     </div>
 
      <img class="cart__img-product" src="${image}" alt="${name}">
 
@@ -221,6 +234,74 @@ const buyAll = () => {
 
 
 
+
+
+
+
+
+function addProductBtn({ target }) {
+    if (!target.classList.contains("add")) {
+        return
+    }
+
+const product = createCartProductData(target.dataset);
+
+    if (existingProduct(product)) { updateQuantity(product) }
+
+    cartState();
+}
+
+
+
+
+
+
+function removeProductBtn({ target }) {
+    if (!target.classList.contains("remove")) {
+        return
+    }
+
+    const product = createCartProductData(target.dataset);
+
+    if (existingProduct(product)){removeOneProduct(product)};
+
+    if (quantity0(product)) {removeFromCart(product)};
+        
+    
+
+
+    cartState();
+
+}
+
+
+
+
+
+const removeOneProduct = (product) => {
+    cart = cart.map((item) => item.name === product.name ? { ...product, quantity: item.quantity - 1 } : item)
+}
+
+
+const quantity0 = (product) => {
+  return  cart.find((item)=> {if(item.name == product.name && item.quantity === 0) {return item.quantity === 0} })
+}
+
+
+   
+
+const removeFromCart = (product) => {
+    const existingCartProduct = cart.find((item)=>item.name==product.name); 
+    if (existingCartProduct.quantity === 0) {
+        if(window.confirm("¿Desea eliminar el producto del carrito?")) {
+           return cart = cart.filter((item)=> item.name != product.name)
+        }
+        
+}
+}
+ 
+
+
 export const cartInit = () => {
 
     cartToggle.addEventListener("click", openCart);
@@ -232,6 +313,8 @@ export const cartInit = () => {
     disableBtn(btnDelete);
     document.addEventListener("DOMContentLoaded", total);
     document.addEventListener("DOMContentLoaded", showTotalBubble);
+    cartProductsContainer.addEventListener("click", addProductBtn);
+    cartProductsContainer.addEventListener("click", removeProductBtn);
 
 
 }

@@ -279,6 +279,7 @@ div.products-container {
     border-top-right-radius: 40px;
     transition: all 0.6s ease;
     transform: translateY(200px);
+    z-index: 1000;
 }
 
 .show {
