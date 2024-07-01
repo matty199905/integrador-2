@@ -109,14 +109,14 @@ const createCartProduct = (product) => {
      Cantidad:${quantity} </span>
 
      <div class="btns-quantity"> 
+     <button class="btn-quantity remove"
+     data-name="${name}"
+     data-price="${price}"
+     data-image="${image}">-</button>
      <button class="btn-quantity add"
       data-name="${name}"
         data-price="${price}"
         data-image="${image}">+</button> 
-     <button class="btn-quantity remove"
-      data-name="${name}"
-        data-price="${price}"
-        data-image="${image}">-</button>
      </div>
 
      </div>
